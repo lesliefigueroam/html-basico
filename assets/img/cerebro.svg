@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fdf6ec"/>
+      <stop offset="100%" stop-color="#f5e6d0"/>
+    </radialGradient>
+    <radialGradient id="brain" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#e8a87c"/>
+      <stop offset="100%" stop-color="#c4704a"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)" rx="12"/>
+  <!-- Simple decorative brain illustration -->
+  <ellipse cx="200" cy="145" rx="95" ry="80" fill="url(#brain)" opacity="0.9"/>
+  <ellipse cx="160" cy="140" rx="55" ry="70" fill="#d4865a" opacity="0.6"/>
+  <ellipse cx="240" cy="140" rx="55" ry="70" fill="#d4865a" opacity="0.6"/>
+  <!-- Brain wrinkles -->
+  <path d="M150 110 Q170 100 190 115 Q210 100 230 110" stroke="#b05a30" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M140 135 Q165 122 185 138 Q205 122 230 135" stroke="#b05a30" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M148 160 Q170 148 192 162 Q212 148 238 160" stroke="#b05a30" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M160 183 Q185 172 210 183" stroke="#b05a30" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Dividing line -->
+  <line x1="200" y1="72" x2="200" y2="220" stroke="#b05a30" stroke-width="1.5" opacity="0.5"/>
+  <!-- Sparkles / positive energy -->
+  <circle cx="310" cy="70" r="5" fill="#f4a261" opacity="0.8"/>
+  <circle cx="330" cy="90" r="3" fill="#e76f51" opacity="0.7"/>
+  <circle cx="85" cy="80" r="4" fill="#f4a261" opacity="0.8"/>
+  <circle cx="68" cy="100" r="3" fill="#e76f51" opacity="0.7"/>
+  <circle cx="320" cy="55" r="2.5" fill="#f4a261" opacity="0.6"/>
+  <!-- Text label -->
+  <text x="200" y="258" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#7a4428" letter-spacing="1">Marian Rojas Estapé · Neurociencia y Bienestar</text>
+</svg>
