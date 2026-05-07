@@ -1,1 +1,35 @@
-/* Hoja de estilos - próximamente */
+
+/* Estilos del body */
+body {
+  background-color: lightblue;
+}
+
+/* Estilos de títulos */
+h1 {
+  color: red;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+}
+
+h3 {
+  color: red;
+}
+
+/* Estilos de imágenes */
+img {
+  width: 400px;
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.txt-img{
+    text-align: center;
+}
