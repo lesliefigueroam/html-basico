@@ -1,35 +1,127 @@
+/* =====================
+   BASE (Mobile First)
+   ===================== */
 
-/* Estilos del body */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: lightblue;
+  font-family: Arial, sans-serif;
+  color: #222;
 }
 
-/* Estilos de títulos */
-h1 {
-  color: red;
-  text-align: center;
-}
-
-h2 {
+h1, h2, h3 {
   color: red;
 }
 
-h3 {
-  color: red;
-}
-
-/* Estilos de imágenes */
 img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   display: block;
   margin: auto;
 }
 
-figcaption {
-    text-align: center;
+/* =====================
+   HEADER
+   ===================== */
+
+header {
+  background-color: #e0f2fe;
+  padding: 20px;
+  text-align: center;
 }
 
-.txt-img{
-    text-align: center;
+header h1 {
+  margin-bottom: 16px;
+}
+
+header figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt-img {
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+  color: #444;
+}
+
+/* =====================
+   MAIN — CSS Grid
+   (móvil: una columna)
+   ===================== */
+
+.contenido-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contenido-principal section,
+.contenido-principal article {
+  margin-bottom: 20px;
+}
+
+aside {
+  background-color: #bae6fd;
+  border-left: 4px solid red;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+
+footer {
+  background-color: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+
+  .contenido-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =====================
+   MEDIA QUERY — Desktop
+   (1024px en adelante)
+   ===================== */
+
+@media (min-width: 1024px) {
+
+  .contenido-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  img {
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+  }
 }
