@@ -101,6 +101,25 @@ footer {
   margin-top: 20px;
 }
 
+/* =====================
+   BOTÓN IR ARRIBA
+   ===================== */
+
+#btn-arriba {
+  display: block;
+  margin: 0 auto 12px auto;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#btn-arriba:hover {
+  background-color: darkred;
+}
 @media (min-width: 768px) {
 
   .contenido-grid {
