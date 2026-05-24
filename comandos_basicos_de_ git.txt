@@ -1,0 +1,85 @@
+============================================
+   COMANDOS BÁSICOS DE GIT
+============================================
+
+¿Qué es Git?
+Git es un sistema de control de versiones que permite registrar
+los cambios realizados en los archivos de un proyecto a lo largo
+del tiempo, facilitando el trabajo en equipo y el seguimiento
+del historial de cambios.
+
+--------------------------------------------
+1. git --version
+--------------------------------------------
+Definición: Muestra la versión de Git que está instalada
+            en tu computador.
+
+Ejemplo:
+  $ git --version
+  git version 2.44.0
+
+--------------------------------------------
+2. git init
+--------------------------------------------
+Definición: Inicializa un repositorio Git nuevo dentro de
+            la carpeta actual. Crea una carpeta oculta
+            llamada .git que guarda todo el historial.
+
+Ejemplo:
+  $ git init
+  Initialized empty Git repository in /proyecto_web/.git/
+
+--------------------------------------------
+3. git add
+--------------------------------------------
+Definición: Agrega uno o más archivos al área de preparación
+            (staging), indicando qué cambios serán incluidos
+            en el próximo commit.
+
+Ejemplo:
+  $ git add .              (agrega TODOS los archivos)
+  $ git add index.html     (agrega solo ese archivo)
+
+--------------------------------------------
+4. git commit
+--------------------------------------------
+Definición: Registra de forma permanente los cambios que
+            están en el área de staging, junto con un
+            mensaje que describe qué se hizo.
+
+Ejemplo:
+  $ git commit -m "Primer commit"
+  $ git commit -m "Se agrega navbar y diseño responsivo"
+
+--------------------------------------------
+5. git status
+--------------------------------------------
+Definición: Muestra el estado actual del repositorio:
+            qué archivos fueron modificados, cuáles están
+            en staging y cuáles aún no fueron registrados.
+
+Ejemplo:
+  $ git status
+  On branch main
+  Changes to be committed:
+    modified: index.html
+  Untracked files:
+    assets/js/app.js
+
+============================================
+   FLUJO TÍPICO DE TRABAJO
+============================================
+
+Paso 1 → git add .
+         (prepara todos los cambios)
+
+Paso 2 → git commit -m "descripción del cambio"
+         (guarda los cambios con un mensaje)
+
+Paso 3 → git status
+         (verifica que todo quedó registrado)
+
+============================================
+   Proyecto: Cómo hacer que te pasen cosas buenas
+   Autor: Actividad práctica – Desarrollo Web 2026
+============================================
